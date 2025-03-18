@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat app</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="chat__section" style="background-color: cadetblue;">
+        <div class="brand" style="background-color: rgb(238, 241, 238);">
+            <img height="40" src="" alt="">
+            <h1 >Random-Chat</h1>
+        </div>
+        <div class="message__area"></div>
+        <div class="msg-send">
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message...">
+            </textarea>
+            <button class="btn">SEND</button>
+            <input type="file" id="imageInput" accept="image/*">
+            <button class="btn-image">Send Image</button>
+            
+        </div>
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+        <select id="userSelect">
+            <option value="">Select User</option>
+        </select>
+     
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
